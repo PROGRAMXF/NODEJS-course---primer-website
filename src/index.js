@@ -10,6 +10,6 @@ app.get('/about',(request, response) =>{
     response.send('<h1>about</h1>')
 })
 
-app.listen(3000)
-console.log("server on port", 3000)
+app.listen(process.env.PORT || 3000)
+console.log("server on port", process.env.PORT || 3000)
 
